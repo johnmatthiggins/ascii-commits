@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-if [[ "$$" == "0" ]]
+if [[ "$#" == "0" ]]
 then
     echo 'USAGE: ./git_ascii.sh FILENAME [--show]'
     exit 0;
