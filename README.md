@@ -2,14 +2,14 @@
 With this BASH script, you can add ascii arts to your commit history!
 There is no practical benefit to adding ascii art to your commit history, but it sure is fun!
 
-Create art with this command:
+Adding art to your commit history only takes a single command.
 ```
 [bob@burgers ~]$ ./git_ascii.sh ascii_art.txt
 ```
 
-You can view the art in your history with this command:
+You can check your beautiful commit history with this command.
 ```
-[user@host ~]$ git log --oneline
+[bob@burgers ~]$ git log --oneline
 59ec0d0 (HEAD -> main, origin/main) ALIGNMENT COMMIT
 1a7bc3d                    __ooooooooo__
 6f3e472               oOOOOOOOOOOOOOOOOOOOOOo
