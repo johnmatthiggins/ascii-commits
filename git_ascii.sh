@@ -1,10 +1,6 @@
 #!/usr/bin/env bash
-function draw_line {
-    # date >> something;
-    # git add .;
-    # git commit -m "$1";
-    echo $1
-}
-
-cat $1 | xargs -I '{}' draw_line '{}'
-rm something
+for i in $(seq 1 $(cat $1 | wc -l))
+do
+    OUTPUT="$(head -n $i $1 | tail -n 1)"
+    echo $OUTPUT
+done
