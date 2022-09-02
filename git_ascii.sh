@@ -1,4 +1,11 @@
 #!/usr/bin/env bash
+
+if [[ "$$" == "0" ]]
+then
+    echo 'USAGE: ./git_ascii.sh FILENAME [--show]'
+    exit 0;
+fi
+
 for i in $(seq 1 $(cat $1 | wc -l))
 do
     echo $RANDOM >> something.txt
