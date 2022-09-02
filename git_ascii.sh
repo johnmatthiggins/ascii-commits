@@ -9,3 +9,9 @@ done
 rm something.txt
 git add .;
 git commit -m "ALIGNMENT COMMIT";
+
+# if show parameter has been specified.
+if [[ "$2" == "--show" ]]
+then
+    git log --oneline
+fi
